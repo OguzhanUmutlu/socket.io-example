@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/file', (req, res) => {
+    res.sendFile(__dirname + '/fileshow.html');
+});
+
 io.on('connection', (socket) => {
     socket.on('results', msg => {
         io.emit('results', msg);
