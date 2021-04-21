@@ -1,0 +1,16 @@
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      socket.on('results', function(msg) {
+        document.write(msg);
+      });
+    </script>
+  </body>
+</html>
