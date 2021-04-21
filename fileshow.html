@@ -9,7 +9,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
       var socket = io();
-      socket.on('results', function(msg) {
+      socket.on('filetext', function(msg) {
         document.getElementById("some_text").innerHTML = msg;
       });
     </script>
