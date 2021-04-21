@@ -34,7 +34,7 @@ app.get("/test", (req,res) => {
 http.listen(3000, () => {
     console.log(`Socket.IO server running at http://localhost:3000/`);
     setInterval(function(){
-        let file = require("fs").readFileSync("./some_folder/somefile.txt");
+        let file = require("fs").readFileSync("./some_file.txt");
         setFileText(file.toString());
     }, 100)
 });
